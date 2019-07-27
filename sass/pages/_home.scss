@@ -1,0 +1,33 @@
+.section-features {
+  padding: 0 8rem;
+  height: 100rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image-box {
+      flex-basis: 33.33%;
+      align-self: center;
+    //   background-color: rgba(128, 128, 0, .3);
+  }
+
+  &__image {
+      width: 90%;
+  }
+
+  &__grid {
+    flex-basis: 57%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 13rem;
+    grid-row-gap: 5rem;
+
+    
+  }
+}
+
+
+

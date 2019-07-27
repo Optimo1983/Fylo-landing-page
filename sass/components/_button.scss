@@ -1,0 +1,32 @@
+.btn {
+  background-color: $color-secondary-green;
+  font-family: 'Raleway', sans-serif;
+  color: $color-white;
+  border-radius: .4rem;
+  letter-spacing: .5px;
+
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+  
+  &--small {
+    padding: 1rem 3rem;
+    font-size: $font-size-default;
+    font-weight: 300;
+  }
+
+  &--transparent {
+    background-color: transparent;
+  }
+
+  &--large {
+    padding: 2.5rem 9rem;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+  }
+
+}

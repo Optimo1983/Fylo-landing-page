@@ -1,0 +1,31 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: $font-size-default;
+}
+
+.heading-primary {
+    font-family: 'raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.5;
+}
+
+.heading-secondary {
+    font-family: 'raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $color-primary-very-dark-blue;
+}
+
+.heading-tertiary {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-primary-very-dark-blue;
+}
+
+p {
+    color: $color-grey;
+}

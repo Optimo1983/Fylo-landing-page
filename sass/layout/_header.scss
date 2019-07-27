@@ -1,0 +1,38 @@
+.header {
+  height: 90vh;
+  width: 100%;
+  background-image: linear-gradient(to right, $color-secondary-dark-blue, $color-primary-soft-blue );
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+  padding: 5rem 8rem 0 8rem;
+  background-size: cover;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__heading-box {
+      flex-basis: 50%;
+      margin-top: -7rem;
+  }
+
+  &__image {
+    margin-right: 4rem;
+  }
+
+}
+
+.header__logo {
+  height: 5rem;
+}
+
