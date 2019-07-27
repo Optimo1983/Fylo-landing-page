@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: $font-size-default;
+    color: $color-grey;
 }
 
 .heading-primary {
@@ -24,8 +25,4 @@ body {
     font-size: 2rem;
     font-weight: 700;
     color: $color-primary-very-dark-blue;
-}
-
-p {
-    color: $color-grey;
 }

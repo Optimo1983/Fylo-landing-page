@@ -1,8 +1,7 @@
 .header {
   height: 90vh;
   width: 100%;
-  background-image: linear-gradient(to right, $color-secondary-dark-blue, $color-primary-soft-blue );
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+  background-image: linear-gradient(to right bottom, $color-secondary-dark-blue, $color-primary-soft-blue );
   padding: 5rem 8rem 0 8rem;
   background-size: cover;
 

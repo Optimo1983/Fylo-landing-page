@@ -1,15 +1,21 @@
-
+//Margin
 .u-margin-bottom-small { margin-bottom: 1.5rem !important; }
-
+.u-margin-bottom-smedium { margin-bottom: 3rem !important; }
 .u-margin-bottom-medium { margin-bottom: 4rem !important; }
-
 .u-margin-bottom-big { margin-bottom: 8rem !important; }
 .u-margin-bottom-huge { margin-bottom: 10rem !important; }
+.u-margin-bottom-really-huge { margin-bottom: 20rem !important; }
 
 .u-margin-top-big { margin-top: 8rem !important; }
-
 .u-margin-top-huge { margin-top: 10rem !important; }
+.u-margin-top-really-huge { margin-top: 20rem !important; }
 
-.u-text-center {text-align: center !important;}
 
-.u-max-width-80-percent {max-width: 80%;}
+//Text
+.u-text-center { text-align: center !important; }
+
+
+.u-max-width-80-percent { max-width: 80%; }
+
+//Display
+.u-display-block {display: block;}

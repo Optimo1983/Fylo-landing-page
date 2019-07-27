@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -41,8 +41,8 @@
       </div>
     </header>
 
-    <main>
-      <div class="section-features u-margin-top-huge">
+    <main class="main">
+      <div class="section-features u-margin-top-big u-margin-bottom-really-huge">
 
         <div class="u-text-center u-margin-bottom-big">
           <h2 class="heading-secondary">Stay Productive, Wherever You Are</h2>
@@ -86,12 +86,134 @@
 
           </div>  
 
-        </div>
+        </div><!-- End: section-features__container -->
 
-      </div>
+      </div><!-- End: section-features -->
+
+      <div class="section-sign-up u-margin-bottom-big u-text-center">
+        
+        <h2 class="heading-secondary u-margin-bottom-smedium">Get Early Access Today</h2>
+
+        <p class= "section-sign-up__paragraph u-margin-bottom-medium">
+          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
+        </p>
+
+        <form class="sign-up-form">
+          <input class="sign-up-form__email" type="email" placeholder="email@example.com"></input>
+          <a href="#" class="btn btn--medium">Join</a>
+        </form>
+
+      </div><!-- End: section-signup -->
+
     </main>
 
-    <footer>
+    <footer class="footer">
+      
+      <div class="footer__container">
+
+        <div class="contact-container">
+
+            <img src="images/logo.svg" alt="Footer logo" class="contact-container__logo">
+            <div class="contact-container__item">
+              <a href="#" class="contact-container__link">
+                <img class="contact-container__icon " src="images/icon-phone.svg"></i> Phone: +1-543-123-4567
+              </a>
+            </div>
+
+            <div class="contact-container__item">
+              <a href="#" class="contact-container__link">
+                <img class="contact-container__icon" src="images/icon-email.svg"></i> example@fylo.com
+              </a>
+            </div>
+            
+        </div>
+
+
+        <div class="nav-container"> 
+
+          <div class="nav-list-container">
+
+            <h3 class="heading-tertiary">Fylo</h3>
+
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Desktop</a>
+              </li>
+
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Mobile App</a>
+              </li>
+
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Pricing</a>
+              </li>
+              
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Feature</a>
+              </li>
+            </ul>
+
+          </div> <!-- End nav-list-container -->
+
+          <div class="nav-list-container">
+
+            <h3 class="heading-tertiary">Company</h3>
+
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">About Us</a>
+              </li>
+
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Jobs</a>
+              </li>
+
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Press</a>
+              </li>
+              
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Blog</a>
+              </li>
+            </ul>
+
+          </div> <!-- End nav-list-container -->
+
+          <div class="nav-list-container">
+
+            <h3 class="heading-tertiary">Support</h3>
+
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Contact Us</a>
+              </li>
+
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Terms</a>
+              </li>
+
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Privacy</a>
+              </li>
+            </ul>
+
+          </div> <!-- End nav-list-container -->
+
+        </div> <!-- End nav-container -->
+
+
+        <div class="subscribe-container">
+
+            <p class="subcribe-container__paragraph u-margin-bottom-smedium">Receive updates from us, including tips and tricks on how to improve your workflow.</p>
+            
+            <form class="subscribe-form">
+              <input class="subscribe-form__email u-display-block" type="email" placeholder="email@example.com"></input>
+              <a href="#" class="btn btn--medium">Join</a>
+            </form>
+
+        </div><!-- End subscribe-container -->
+        
+      </div><!-- End footer__container -->
     </footer>
   
 </body>
