@@ -4,6 +4,7 @@
   background-image: linear-gradient(to right bottom, $color-secondary-dark-blue, $color-primary-soft-blue );
   padding: 5rem 8rem 0 8rem;
   background-size: cover;
+  position: relative;
 
   &__top {
     display: flex;
@@ -15,9 +16,15 @@
 
   &__bottom {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+
+    padding-left: inherit;
+    padding-right: inherit;
   }
 
   &__heading-box {
@@ -28,7 +35,6 @@
   &__image {
     margin-right: 4rem;
   }
-
 }
 
 .header__logo {

@@ -14,8 +14,6 @@
     }
   }
   
-
-
 .contact-container {
   display: flex;
   flex-basis: 22%;
@@ -57,12 +55,6 @@
   border-right: 1px solid #fff;
 }
 
-.nav-sub-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 90%;
-}
-
 .nav-list-container {
   & .heading-tertiary {
     color: $color-white;
@@ -80,8 +72,6 @@
 
   }
 }
-
-
 
 .subscribe-container {
   display: flex;
