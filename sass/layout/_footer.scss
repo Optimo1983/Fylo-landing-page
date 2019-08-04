@@ -3,9 +3,25 @@
     background-color: $color-primary-very-dark-blue;
     padding: 0 8rem 10rem 8rem;
 
+    @include respond(tablet-landscape) {
+      padding: 18rem 6rem 18rem 6rem;
+
+      @include respond(tablet-landscape) {
+        padding-bottom: 10rem;
+      }
+    }
+
   &__container {
     padding-top: 35rem;
     display: flex;
+
+    @include respond(tablet-landscape) {
+      padding-top: 15rem;
+    }
+
+    @include respond(tablet-portrait) {
+      flex-wrap: wrap;
+    }
   }
 
     & * {
@@ -53,6 +69,18 @@
 
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
+
+  @include respond(tablet-portrait) {
+    order: 1; //moves to ultimate position.
+    flex-basis: 100%;
+    justify-content: space-around;
+
+
+    border: none;
+    border-top: 1px solid white;
+    padding-top: 5rem;
+    margin-top: 5rem;
+  }
 }
 
 .nav-list-container {
@@ -78,6 +106,13 @@
   flex-basis: 35.3%;
   flex: 1;
   justify-content: flex-end;
+
+  // border: 1px dotted red;
+
+  @include respond(tablet-portrait) {
+    justify-content: flex-end;
+
+  }
 }
 
 .subscribe-sub-container {
@@ -86,14 +121,23 @@
 
   max-width: 38rem;
   padding-left: 3rem;
+
+  // border: 1px dotted green;
+
+  @include respond(tablet-portrait) {
+    max-width: 41.25rem;;
+
+  }
   
   &__paragraph {
     font-weight: 600;
     color: $color-white;
   }
+
 }
 
 .subscribe-form {
+
   &__email {
     width: 100%;
     border: none;
@@ -103,6 +147,9 @@
     font-family: inherit;
     font-size: inherit;
     color: $color-grey;
+
+    @include respond(tablet-portrait) {
+    }
 
     &::placeholder {
       color: rgba(143, 143, 143, 0.6);
@@ -114,4 +161,7 @@
   display: block;
   max-width: 19rem;
   margin-left: auto;
+
+  @include respond(tablet-portrait) {
+  }
 }
