@@ -6,9 +6,10 @@
     @include respond(tablet-landscape) {
       padding: 18rem 6rem 18rem 6rem;
 
-      @include respond(tablet-landscape) {
-        padding-bottom: 10rem;
-      }
+    @include respond(mobile) {
+      padding: 16rem 3rem 12rem 3rem;
+    }
+    
     }
 
   &__container {
@@ -22,6 +23,12 @@
     @include respond(tablet-portrait) {
       flex-wrap: wrap;
     }
+
+    @include respond(mobile) {
+      flex-direction: column;
+      align-items: center;
+    }
+
   }
 
     & * {
@@ -34,8 +41,12 @@
   display: flex;
   flex-basis: 22%;
   flex-direction: column;
-
   padding-right: 3rem;
+
+  @include respond(mobile) {
+    margin-bottom: 8rem;
+
+  }
 
   &__logo {
     width: 20rem;
@@ -74,12 +85,15 @@
     order: 1; //moves to ultimate position.
     flex-basis: 100%;
     justify-content: space-around;
-
-
     border: none;
     border-top: 1px solid white;
     padding-top: 5rem;
     margin-top: 5rem;
+  }
+
+  @include respond(mobile) {
+    width: 100%;
+    margin-top: 8rem;
   }
 }
 
@@ -107,26 +121,23 @@
   flex: 1;
   justify-content: flex-end;
 
-  // border: 1px dotted red;
-
-  @include respond(tablet-portrait) {
-    justify-content: flex-end;
-
+  @include respond(mobile) {
+    justify-content: center;
   }
 }
 
 .subscribe-sub-container {
   display: flex;
   flex-direction: column;
-
   max-width: 38rem;
   padding-left: 3rem;
-
-  // border: 1px dotted green;
-
+  
   @include respond(tablet-portrait) {
     max-width: 41.25rem;;
+  }
 
+  @include respond(mobile) {
+    padding-left: 0;
   }
   
   &__paragraph {
@@ -161,7 +172,9 @@
   display: block;
   max-width: 19rem;
   margin-left: auto;
+  text-align: center;
 
-  @include respond(tablet-portrait) {
+  @include respond(mobile) {
+    max-width: 100%;
   }
 }
