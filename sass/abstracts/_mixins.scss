@@ -1,9 +1,9 @@
 @mixin respond($device) {
     @if ($device == tablet-landscape) {
       @media (max-width: 75em) {@content}
-    }
+    };
 
     @if ($device == tablet-portrait) {
       @media (max-width: 56.25em) {@content}
-    }
+    };
 }
