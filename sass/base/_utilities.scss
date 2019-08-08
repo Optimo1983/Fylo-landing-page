@@ -8,6 +8,10 @@
   @include respond(tablet-portrait) {
     margin-bottom: 2.5rem !important;
   }
+
+  @include respond(mobile) {
+    // margin-bottom: 2.5rem !important;
+  }
 }
 
 .u-margin-bottom-big {
@@ -19,7 +23,14 @@
 }
 
 .u-margin-bottom-huge { margin-bottom: 10rem !important; }
-.u-margin-bottom-really-huge { margin-bottom: 20rem !important; }
+
+.u-margin-bottom-really-huge { 
+  margin-bottom: 20rem !important;
+  
+  @include respond(tablet-portrait) {
+    margin-bottom: 12rem !important;
+  }
+}
 
 .u-margin-top-big { margin-top: 8rem !important; }
 .u-margin-top-huge { margin-top: 10rem !important; }
@@ -30,7 +41,7 @@
 .u-text-center { text-align: center !important; }
 
 
-.u-max-width-80-percent { max-width: 80%; }
+.u-max-width-80-percent { max-width: 95%; }
 
 //Display
 .u-display-block {display: block;}

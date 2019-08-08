@@ -1,5 +1,6 @@
 @mixin respond($device) {
     @if ($device == tablet-landscape) {
+<<<<<<< HEAD
       @media (max-width: 75em) {@content}
     };
 
@@ -7,3 +8,17 @@
       @media (max-width: 56.25em) {@content}
     };
 }
+=======
+      @media (max-width: 75em) {@content};
+    }
+
+    @if ($device == tablet-portrait) {
+      @media (max-width: 56.25em) {@content};
+    }
+
+    @if ($device == mobile) {
+      @media (max-width: 37.5em) {@content};
+    }
+}
+
+>>>>>>> 9128def78ef501c303126b6feaff105be35697b3
