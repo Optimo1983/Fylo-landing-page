@@ -1,0 +1,93 @@
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, $color-secondary-dark-blue, $color-primary-soft-blue );
+  padding: 5rem 8rem 0 8rem;
+  background-size: cover;
+  position: relative;
+
+  @include respond(tablet-landscape) {
+    padding: 5rem 6rem 0 6rem;
+  }
+
+  @include respond(mobile) {
+    padding: 4rem 3rem 0 3rem;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+
+  &__sign-up-box {
+    z-index: 2;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    padding-left: inherit;
+    padding-right: inherit;
+    width: 100%;
+
+    @include respond(tablet-portrait) {
+      flex-direction: column-reverse;
+    }
+
+  }
+  
+
+  &__heading-box {
+      flex-basis: 50%;
+      margin-top: -7rem;
+      
+      @include respond(tablet-portrait) {
+        text-align: center;
+        margin-top: 0;
+        width: 66rem;
+        
+      }
+
+      @include respond(mobile) {
+        width: 42rem;
+    }
+  }
+
+  &__image {
+    margin: 0 4rem;
+
+    @include respond(tablet-landscape) {
+      width: 45rem;
+    }
+
+    @include respond(tablet-portrait) {
+      margin: 0;
+      margin-bottom: 4rem;
+      width: 35rem;
+    }
+
+    @include respond(mobile) {
+      margin-bottom: 3rem;
+      width: 30rem;
+    }
+  }
+}
+
+.header__logo {
+  height: 5rem;
+
+  @include respond(mobile) {
+    height: 4rem;
+  }
+}
+

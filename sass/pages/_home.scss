@@ -1,0 +1,161 @@
+.main {
+  background-color: #fff;
+  transform: skewY(7deg);
+  margin-top: -9rem;
+  padding: 18rem 8rem 18rem 8rem;
+  
+  @include respond(tablet-landscape) {
+    padding: 18rem 6rem 18rem 6rem;
+  }
+
+  @include respond(mobile) {
+    padding: 15rem 3rem 15rem 3rem;
+  }
+}
+
+
+.section-features {
+  transform: skewY(-7deg);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(tablet-portrait) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__image-box {
+      flex-basis: 35%;
+      align-self: center;
+
+      @include respond(tablet-portrait) {
+        margin-bottom: 6rem;
+        width: 100%;
+      }
+  }
+
+  &__image {
+      width: 95%;
+
+      @include respond(tablet-portrait) {
+        width: 35rem;
+        display: block;
+        margin: 0 auto;
+      }
+
+      @include respond(mobile) {
+        width: 30rem;
+      }
+
+     
+  }
+
+  &__grid {
+    flex-basis: 57%;
+    
+    display: grid;
+    grid-template-columns: 29rem minmax(3.5rem, 13rem) 29rem;
+    grid-row-gap: 5rem;
+
+    @include respond(mobile) {
+      grid-template-columns: minmax(29rem, 40rem);
+    }
+
+  }
+} //End section-features
+
+.feature {
+  &--1 {
+      grid-column: 1 / 2;
+
+      @include respond(mobile) {
+        grid-column: auto;
+
+      }
+    }
+
+    &--2 {
+      grid-column: 3 / 4;
+
+      @include respond(mobile) {
+        grid-column: auto;
+      }
+    }
+
+    &--3 {
+      grid-column: 1 / 2;
+
+      @include respond(mobile) {
+        grid-column: auto;
+      }
+    }
+
+    &--4 {
+      grid-column: 3 / 4;
+
+      @include respond(mobile) {
+        grid-column: auto;
+      }
+    }
+}
+
+.section-sign-up {
+  transform: skewY(-7deg);
+  max-width: 75rem;
+  margin: 0 auto ;
+
+  @include respond(mobile) {
+    max-width: 40.875rem;
+  }
+
+  &__paragraph {
+    color: $color-secondary-dark-blue;
+    font-weight: 700;
+    margin-bottom: 4rem;
+
+    @include respond(mobile) {
+      font-weight: 600;
+    }
+  }
+
+} //End section-signup
+
+.sign-up-form {
+  &__email {
+    border: none;
+    border-radius: .4rem;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+    margin-right: 3rem;
+    width: 55%;
+    min-width: 30rem;
+    padding: 1.5rem 4rem;
+    font-family: inherit;
+    font-size: inherit;
+    color: $color-grey;
+
+
+    @include respond(mobile) {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+
+    &::placeholder {
+      color: rgba(143, 143, 143, 0.6);
+    }
+  }
+
+  & .btn {
+    @include respond(mobile) {
+      width: 100%;
+      margin-bottom: 2rem;
+      font-weight: 600;
+    }
+  }
+}
+
+
+
